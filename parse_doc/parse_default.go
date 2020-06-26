@@ -22,7 +22,7 @@ import (
 )
 
 var flagRegexp = regexp.MustCompile(`(-[-[:word:]]+(?:=?))`)
-var allFlagsRegexp = regexp.MustCompile(`^\s+(?:(-[-[:word:]]+)(?:[ =A-Z_\[\]]*)?[, \t]*)+`)
+var allFlagsRegexp = regexp.MustCompile(`^\s*(?:(-[-[:word:]]+)(?:[ =A-Z_\[\]]*)?[, \t]*)+`)
 var indentedSubCommandRegexp = regexp.MustCompile(`^\s+([-[:word:]]+)`)
 var subCommandRegexp = regexp.MustCompile(`^[[:word:]][-[:word:]]*$`)
 var wordRegexp = regexp.MustCompile(`\S+`)
